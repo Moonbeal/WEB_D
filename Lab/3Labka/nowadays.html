@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сьогодення Сенів Катерини Дмитрівни</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px 0;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .nested-list {
+            margin-left: 20px;
+        }
+
+        /* Непарні елементи ненумерованого списку: сірий фон + контрастний колір тексту */
+        ul li:nth-child(odd) {
+            background-color: #d3d3d3; /* Сірий */
+            color: #000000; /* Чорний для контрасту */
+            padding: 3px;
+        }
+
+        /* Парні елементи ненумерованого списку: білий фон */
+        ul li:nth-child(even) {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 3px;
+        }
+
+        /* 3-й та 5-й елементи нумерованого списку – курсор як у гіперпосилання */
+        ol li:nth-child(3),
+        ol li:nth-child(5) {
+            cursor: pointer;
+        }
+
+        /* 4-й елемент нумерованого списку – змінений фон (не білий) */
+        ol li:nth-child(4) {
+            background-color: #ffa07a; /* Світло-лососевий */
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Назад на головну</a>
+    <h1>Сьогодення Сенів Катерини Дмитрівни</h1>
+
+    <h2>Мій типовий список покупок</h2>
+    <ul>
+        <li>Молочні продукти:
+            <ul class="nested-list">
+                <li>Молоко</li>
+                <li>Сир</li>
+                <li>Масло</li>
+            </ul>
+        </li>
+        <li>Фрукти:
+            <ul class="nested-list">
+                <li>Банани</li>
+                <li>Грейпфрут</li>
+                <li>Апельсини</li>
+            </ul>
+        </li>
+        <li>Овочі:
+            <ul class="nested-list">
+                <li>Картопля</li>
+                <li>Помідори</li>
+                <li>Огірок</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Мій улюблений десерт</h2>
+    <ol>
+        <li>Приготування тіста для сінабонів:
+            <ol class="nested-list">
+                <li>Взяти 0,5 кг борошна</li>
+                <li>Додати 7 г сухих дріжджів</li>
+                <li>Додати 200 мл теплого молока</li>
+                <li>Додати 2 яйця</li>
+                <li>Додати 80 г цукру</li>
+                <li>Додати 70 г розтопленого вершкового масла</li>
+                <li>Перемішати та залишити на 1 годину</li>
+            </ol>
+        </li>
+        <li>Формування булочок:
+            <ol class="nested-list">
+                <li>Розкачати тісто у прямокутник</li>
+                <li>Змастити його 50 г розтопленого масла</li>
+                <li>Посипати 100 г коричневого цукру та 2 ч. л. кориці</li>
+                <li>Скрутити тісто в рулет</li>
+                <li>Нарізати на 12 частин</li>
+            </ol>
+        </li>
+        <li>Випікання:
+            <ol class="nested-list">
+                <li>Розігріти духовку до 180°C</li>
+                <li>Викласти булочки у форму</li>
+                <li>Випікати 25-30 хвилин</li>
+            </ol>
+        </li>
+        <li>Приготування глазурі:
+            <ol class="nested-list">
+                <li>Змішати 150 г вершкового сиру</li>
+                <li>Додати 50 г розтопленого вершкового масла</li>
+                <li>Додати 100 г цукрової пудри</li>
+                <li>Додати 1 ч. л. ванільного екстракту</li>
+                <li>Збити до однорідності</li>
+            </ol>
+        </li>
+        <li>Завершення:
+            <ol class="nested-list">
+                <li>Полити гарячі булочки глазур’ю</li>
+                <li>Подавати теплими</li>
+            </ol>
+        </li>
+    </ol>    
+</body>
+</html>

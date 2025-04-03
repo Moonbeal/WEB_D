@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.block-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+.block-1 { background: #f0e6d2; color: #4a3d2f; }
+.block-2 { background: #e8d3b7; color: #5c4b3a; }
+.block-3 { background: #d8c3a5; color: #6b5a4a; }
+.block-4 { background: #c9b8a4; color: #7a6d5c; }
+
+.block-header {
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Адаптивність */
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1201px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
